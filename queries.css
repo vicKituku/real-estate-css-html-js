@@ -1,0 +1,268 @@
+@media (max-width: 84em) {
+  .container {
+    max-width: 120rem;
+    padding: 0 2.4rem;
+  }
+  .how-cards {
+    gap: 1.4rem;
+    padding-top: 3.2rem;
+  }
+  .hero-title {
+    font-size: 4.8rem;
+  }
+  .hero-description {
+    font-size: 2.4rem;
+  }
+  /* .button--lg {
+    padding: 3rem 1.5rem;
+    font-weight: 700;
+  }
+  .cta {
+    margin-top: 7rem;
+  }
+  .cta a {
+    font-size: 3.6rem;
+  }
+
+  .cta-icon {
+    height: 11rem;
+    width: 11rem;
+  } */
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 52%;
+  }
+  .card-img img {
+    width: 100%;
+  }
+  .why-us-img img {
+    width: 100%;
+  }
+  .container {
+    max-width: 110rem;
+    padding: 2.4rem;
+  }
+}
+@media (max-width: 59em) {
+  html {
+    font-size: 40%;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 9.6rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .cta {
+    justify-content: center;
+  }
+  .hero-img {
+    text-align: center;
+  }
+  .hero-img img {
+    width: 70%;
+  }
+  .search-properties {
+    margin: 7.5rem;
+  }
+  .how-cards {
+    gap: 4.8rem;
+  }
+  .featured-properties {
+    margin: 15rem auto;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+  .nav {
+    padding: 4rem;
+  }
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="menu-sharp"] {
+    display: none;
+  }
+  .nav-open .icon-mobile-nav[name="close-sharp"] {
+    display: block;
+  }
+  .featured-card {
+    border-top-right-radius: 100px;
+  }
+  .featured-name p {
+    font-size: 2.4rem;
+  }
+  .featured-name span {
+    font-size: 1.8rem;
+  }
+  .button--lg {
+    padding: 3rem 3rem;
+    font-weight: 700;
+  }
+  .cta {
+    margin-top: 7rem;
+  }
+  .cta a {
+    font-size: 3.6rem;
+  }
+
+  .cta-icon {
+    height: 11rem;
+    width: 11rem;
+  }
+}
+@media (max-width: 45em) {
+  .search-properties {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+  }
+  .how-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .last {
+    width: 50%;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .featured-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-note {
+    grid-column: 1/-1;
+    align-self: center;
+  }
+}
+@media (max-width: 38em) {
+  html {
+    font-size: 37%;
+  }
+  .nav-header {
+    padding: 4rem;
+  }
+  .search-properties {
+    margin-bottom: 14rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.2rem;
+  }
+  .category {
+    text-align: center;
+  }
+  .container {
+    padding: 0;
+  }
+  .hero-title {
+    margin-bottom: 7rem;
+    line-height: 1.2;
+  }
+  .how-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+  }
+  .how-card {
+    margin: 6.4rem;
+  }
+  .last {
+    width: 100%;
+  }
+  .why-us {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .why-us-img {
+    text-align: center;
+  }
+  .why-us-img img {
+    width: 80%;
+  }
+  .why-us-text {
+    padding: 3.6rem;
+    text-align: center;
+  }
+  .featured-text {
+    padding: 0 3.6rem;
+  }
+  .featured-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 6.4rem;
+  }
+  .testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+  }
+  .featured-properties {
+    margin-bottom: 7rem;
+  }
+  .footer-section {
+    padding: 3.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .button--lg {
+    padding: 3rem;
+    font-weight: 700;
+  }
+  .cta {
+    margin-top: 7rem;
+  }
+  .cta a {
+    font-size: 3.6rem;
+  }
+
+  .cta-icon {
+    height: 11rem;
+    width: 11rem;
+  }
+  .hero-img {
+    display: none;
+  }
+}

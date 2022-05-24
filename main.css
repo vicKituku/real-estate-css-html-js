@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  color: #000000;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+/* GENERAL STYLES */
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+}
+.max-width-lg {
+  max-width: 120rem;
+}
+
+/* NAVIGATION */
+.logo {
+  font-family: "Oleo Script", cursive;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.nav-header {
+  display: flex;
+  border-bottom: 1px solid #c4c4c4;
+  position: relative;
+}
+.nav {
+  display: flex;
+  flex: 1 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-nav-list {
+  font-size: 2.4rem;
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  padding: 4.2rem 0;
+}
+.main-nav-list a:link,
+.main-nav-list a:visited {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+}
+.main-nav-list a:hover,
+.main-nav-list a:active {
+  color: #0f298b;
+  font-weight: 500;
+}
+.btn:link,
+.btn:visited {
+  background-color: #2549d3;
+  color: #fff !important;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+}
+.btn:active,
+.btn:hover {
+}
+/* Mobile Nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #0f298b;
+}
+.icon-mobile-nav[name="close-sharp"] {
+  display: none;
+}
+/* HERO SECTION */
+.hero-section {
+  margin-top: 10rem;
+  margin-bottom: 7.5rem;
+}
+.hero-text {
+}
+.hero-title {
+  font-size: 5.8rem;
+  color: #0f298b;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.hero-description {
+  font-size: 3.2rem;
+  line-height: 1.6;
+  margin-top: 2.4rem;
+}
+.cta {
+  display: flex;
+  gap: 4.8rem;
+  margin-top: 3.2rem;
+}
+.cta-icon {
+  color: #2549d3;
+  height: 6.4rem;
+  width: 6.4rem;
+}
+.button--lg {
+  text-decoration: none;
+  font-size: 2.4rem;
+  background-color: #2549d3;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 10px;
+}
+.hero-img img {
+  max-width: 100%;
+}
+/* SEARCH SECTION */
+.search-properties {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  /* height: 15rem; */
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 6.7rem;
+  box-shadow: 24px 24px 48px rgba(37, 73, 211, 0.05);
+}
+.category {
+  text-align: center;
+}
+.category p {
+  font-size: 2.4rem;
+  color: #0f298b;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.category span {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+.category a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.down-icon {
+  font-size: 2.4rem;
+  color: #0f298b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.down-icon ion-icon {
+  font-size: 3.2rem;
+  margin-left: 0.8rem;
+  transform: translateY(-20%);
+}
+.search-icon {
+  height: 2.4rem;
+  text-align: center;
+}
+/* HOW IT WORKS SECTION */
+.how-it-works {
+}
+.how-text {
+  text-align: center;
+  margin-bottom: 7.2rem;
+}
+.how-text h2 {
+  font-size: 4.8rem;
+  color: #0f298b;
+  margin-bottom: 0.8rem;
+}
+.how-text p {
+  font-size: 3.2rem;
+}
+.how-cards {
+  display: flex;
+  gap: 7.2rem;
+}
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+  background-color: #fff;
+  padding: 6.4rem 3.2rem;
+  box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
+}
+.card-img img {
+  align-self: start;
+}
+
+.card-title {
+  font-size: 3rem;
+}
+.card-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+/* WHY CHOOSE US SECTION */
+.why-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+  margin-top: 20rem;
+  align-items: center;
+}
+.why-us-img {
+}
+.why-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.why-title {
+  font-size: 3.2rem;
+  color: #0f298b;
+}
+.why-description {
+  font-size: 2.4rem;
+}
+.why-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding-right: 4.2rem;
+}
+.why-list ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.list-icon {
+  height: 2.4rem;
+  color: #0f298b;
+}
+/* FEATURED PROPERTIES SECTION*/
+.featured-properties {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+}
+.featured-text {
+  text-align: center;
+  margin-bottom: 12rem;
+}
+.featured-title {
+  font-size: 3.2rem;
+  color: #0f298b;
+  margin-bottom: 1.2rem;
+}
+.featured-description {
+  font-size: 2.4rem;
+}
+.featured-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+.featured-card {
+  background-color: #fff;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 24px 24px 48px rgba(0, 0, 0, 0.05);
+}
+.card-img {
+  margin-bottom: 1.2rem;
+}
+.card-img img {
+  width: 100%;
+}
+.featured-details {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.2rem 3.6rem;
+  margin-bottom: 3rem;
+}
+.featured-name p {
+  font-size: 3.2rem;
+}
+.featured-name span {
+  font-size: 2rem;
+  opacity: 80%;
+}
+
+.featured-price p {
+  font-size: 2rem;
+}
+.featured-price span {
+  font-size: 2rem;
+  color: #0f298b;
+  font-weight: 500;
+}
+/* TESTIMONIALS SECTION */
+.testimonials {
+  margin-bottom: 15rem;
+}
+.testimonials-text {
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+.testimonials-title {
+  font-size: 3.2rem;
+  color: #0f298b;
+  margin-bottom: 1.2rem;
+}
+.testimonials-description {
+  font-size: 2.4rem;
+}
+.testimonials-cards {
+  display: flex;
+  gap: 5.4rem;
+}
+.testimonials-card {
+  background-color: #fff;
+  padding: 2.4rem;
+  border-radius: 10px;
+}
+.client-name p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.client-name span {
+  font-size: 2rem;
+  opacity: 80%;
+}
+.message {
+  margin-top: 1.2rem;
+  font-size: 2.2rem;
+  line-height: 1.6;
+}
+/* FOOTER SECTION */
+footer {
+  background-color: #0f298b;
+  color: #fff;
+}
+.footer-section {
+  padding: 20rem 0;
+  display: flex;
+  gap: 10rem;
+}
+.footer-note {
+  flex: 1;
+}
+.footer-note h3 {
+  font-family: "Oleo Script", cursive;
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+.footer-note p {
+  font-size: 2.4rem;
+  font-family: "Nunito", sans-serif;
+}
+.footer-item {
+  flex: 1;
+}
+.footer-item h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+.footer-item ul li {
+  font-size: 2.4rem;
+  font-family: "Nunito", sans-serif;
+  opacity: 80%;
+  list-style: none;
+}
